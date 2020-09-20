@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="100">
+
+            <ImageView
+                android:id="@+id/iv_movie"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:background="@drawable/movieimage"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_movInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="영화 정보"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="예매율" />
+
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="%" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="평점" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="9.07" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="누적관객수" />
+
+                <TextView
+                    android:id="@+id/tv_audience"
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="10310000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="0.1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:text="줄거리" />
+
+            <TextView
+                android:id="@+id/tv_story"
+                android:layout_weight="0.9"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="영화 줄거리" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="0.4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:text="감독 / 출연" />
+
+            <TextView
+                android:id="@+id/tv_director"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="감독 : 봉준호" />
+
+            <TextView
+                android:id="@+id/tv_actor"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="출연 " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:textSize="20sp"
+                android:text="한줄평" />
+
+            <Button
+                android:id="@+id/btn_addreview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="#CCCCFF"
+                android:text="한줄평쓰기" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="한줄평목록" />
+
+        <Button
+            android:id="@+id/btn_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#CCCCFF"
+            android:text="예매하기"/>
+
+    </LinearLayout>
+
+</ScrollView>
