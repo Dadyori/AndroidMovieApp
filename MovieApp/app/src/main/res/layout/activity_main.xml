@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="#B2CCFF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_weight="100">
+            android:layout_weight="100"
+            android:background="#D9E5FF">
 
             <ImageView
                 android:id="@+id/iv_movie"
@@ -21,21 +23,60 @@
                 android:background="@drawable/movieimage"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/tv_movInfo"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="65"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
-                android:text="영화 정보"  />
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_movTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="80dp"
+                    android:text="기생충"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_movDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2019.05.30"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_movInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="드라마 / 131분"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/heart"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="3">
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:layout_marginTop="1.5dp"
+            android:layout_marginBottom="0.7dp"
+            android:background="#FFFFFF">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -47,8 +88,9 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:textSize="20sp"
+                    android:gravity="center|bottom"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
                     android:text="예매율" />
 
                 <TextView
@@ -56,7 +98,7 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
+                    android:gravity="center|top"
                     android:text="%" />
 
             </LinearLayout>
@@ -71,8 +113,9 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:textSize="20sp"
+                    android:gravity="center|bottom"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
                     android:text="평점" />
 
                 <TextView
@@ -80,7 +123,7 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
+                    android:gravity="center|top"
                     android:text="9.07" />
 
             </LinearLayout>
@@ -95,8 +138,9 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:textSize="20sp"
+                    android:gravity="center|bottom"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
                     android:text="누적관객수" />
 
                 <TextView
@@ -104,8 +148,8 @@
                     android:layout_weight="0.5"
                     android:layout_height="0dp"
                     android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="10310000" />
+                    android:gravity="center|top"
+                    android:text="1031만명" />
 
             </LinearLayout>
 
@@ -113,91 +157,108 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="#FFFFFF">
 
             <TextView
-                android:layout_weight="0.1"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
                 android:text="줄거리" />
 
             <TextView
                 android:id="@+id/tv_story"
                 android:layout_weight="0.9"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
                 android:text="영화 줄거리" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0.7dp"
+            android:layout_marginBottom="0.7dp"
+            android:background="#FFFFFF">
 
             <TextView
-                android:layout_weight="0.4"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:text="감독 / 출연" />
 
             <TextView
                 android:id="@+id/tv_director"
-                android:layout_weight="0.3"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="감독 : 봉준호" />
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:text="감독 :" />
 
             <TextView
                 android:id="@+id/tv_actor"
-                android:layout_weight="0.3"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="출연 " />
+                android:layout_marginBottom="10dp"
+                android:text="출연 :" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:weightSum="100">
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginTop="0.7dp"
+            android:background="#FFFFFF">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="70"
                 android:textSize="20sp"
-                android:text="한줄평" />
+                android:layout_marginTop="5dp"
+                android:text="한줄평"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/btn_addreview"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:layout_weight="30"
-                android:background="#CCCCFF"
+                android:textColor="#6799FF"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:padding="4dp"
+                android:textStyle="bold"
                 android:text="한줄평쓰기" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:layout_width="match_parent"
             android:gravity="center"
+            android:background="#FFFFFF"
             android:text="한줄평목록" />
 
         <Button
             android:id="@+id/btn_reserve"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#CCCCFF"
-            android:text="예매하기"/>
+            android:layout_height="match_parent"
+            android:background="#B2CCFF"
+            android:textSize="20sp"
+            android:text="예매하기" />
 
     </LinearLayout>
 

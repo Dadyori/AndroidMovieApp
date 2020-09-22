@@ -24,6 +24,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hlIphsem8HNxR1JC59rh0WBiwE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -110,9 +113,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="633" y="269" key="FileChooserDialogImpl" timestamp="1600582091798">
+    <state x="633" y="269" key="FileChooserDialogImpl" timestamp="1600777157033">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="633" y="269" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1600582091798" />
+    <state x="633" y="269" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1600777157033" />
   </component>
 </project>
