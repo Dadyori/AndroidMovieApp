@@ -20,10 +20,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="35"
-                android:background="@drawable/movieimage"
+                android:src="@drawable/movieimage"
                 android:gravity="center" />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="65"
@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="110dp"
                     android:text="2019.05.30"
                     android:textStyle="bold"
                     android:textSize="15dp" />
@@ -54,19 +54,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
+                    android:layout_marginTop="130dp"
                     android:text="드라마 / 131분"
                     android:textStyle="bold"
                     android:textSize="15dp" />
 
                 <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginTop="10dp"
+                    android:id="@+id/iv_thumbup"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/heart"/>
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/thumbsup" />
 
+                <TextView
+                    android:id="@+id/tv_thumbup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="160dp"
+                    android:text="1200"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/iv_thumbdown"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="161dp"
+                    android:src="@drawable/thumbsdown" />
+
+                <TextView
+                    android:id="@+id/tv_thumbdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="160dp"
+                    android:text="1000"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -245,11 +274,12 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_height="150dp"
+        <ListView
+            android:id="@+id/reviewspace"
             android:layout_width="match_parent"
-            android:gravity="center"
+            android:layout_height="235dp"
             android:background="#FFFFFF"
+            android:gravity="center"
             android:text="한줄평목록" />
 
         <Button
